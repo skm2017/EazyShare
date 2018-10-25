@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>EazyShare</title>
+  <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    h1 {
+      text-align: center;
+    }
+    fieldset {
+      border: 1px solid #444;
+      border-radius: 3px;
+    }
+    div {
+      margin: 10px;
+    }
+    input[type='text'] {
+      border: 1px solid #444;
+      border-radius: 3px;
+      padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    label {
+      display: inline-block;
+      text-align: right;
+      width: 90px;
+    }
+    button {
+      background: #444;
+      color: #fff;
+      padding: 7px 15px;
+      border: none;
+      border-radius: 3px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #222;
+      color: #fff;
+      
+    }
+    .button {
+      margin-left: 104px;
+    }
+    .author {
+      text-align: center;
+    }
+    a {
+      color: #555;
+    }
+    #message {
+      color: #00aa00;
+    }
+    </style>
+</head>
+
+<body>
+  <h1>EazyShare</h1>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>Hotspot credentials</legend>
+      <div>
+        <p id="message"></p>
+      </div>
+      <div>
+        <label for="ssid">SSID: </label>
+        <input type="text" id="ssid" name="ssid_name" required>
+      </div>
+      <div>
+        <label for="pwd">Password: </label>
+        <input type="text" id="pwd" name="ssid_pass" required pattern=".{8,}" title="8 characters minimum">
+      </div>
+      <div class="button">
+        <button id="submit" class="create-hotspot">Create hotspot</button>
+      </div>
+    </fieldset>
+  </form>
+  <p class="author">Created By: <a href="http://skm.cu.ma">SKM</a></p>
+  <script>
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>
