@@ -1,0 +1,19 @@
+{
+  "name": "EazyShare",
+  "version": "1.0.0",
+  "description": "Share the Internet from your PC as a hotspot with others.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Sam Madadi",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "electron": "^3.0.6"
+  }
+}
